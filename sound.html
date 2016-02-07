@@ -1,0 +1,12 @@
+<script>
+var audio = new Audio('beep.mp3');
+var count = 0;
+var play_audio = function (){
+  audio.play();
+  count++;
+  document.getElementById('count').innerHTML = count;
+}
+setInterval(function(){play_audio();}, 12000);
+</script>
+
+<h1 id='count' style="font-size: 655px;">0</h1>
