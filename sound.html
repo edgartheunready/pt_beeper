@@ -1,12 +1,21 @@
-<script>
-var audio = new Audio('beep.mp3');
-var count = 0;
-var play_audio = function (){
-  audio.play();
-  count++;
-  document.getElementById('count').innerHTML = count;
-}
-setInterval(function(){play_audio();}, 12000);
-</script>
-
-<h1 id='count' style="font-size: 655px;">0</h1>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <script>
+    var audio = new Audio('beep.mp3');
+    var count = 0;
+    var play_audio = function (){
+      audio.play();
+      count++;
+      document.getElementById('count').innerHTML = count;
+    }
+    setInterval(function(){play_audio();}, 60000 * 10);
+    </script>
+  </head>
+  <body>
+    <div id='count'class="round">
+      0
+    </div>
+  </body>
+</html>
